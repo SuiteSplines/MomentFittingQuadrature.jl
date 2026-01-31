@@ -1,0 +1,26 @@
+name = "MomentFittingQuadrature"
+uuid = "02ef8825-a90c-4183-9e33-ca1bdd4e7cfb"
+authors = ["Michał Mika <michal@mika.sh>"]
+version = "0.1.0"
+
+[deps]
+Algoim = "0eb9048c-21de-4c7a-bfac-056de1940b74"
+CartesianProducts = "ddfd9c64-15e7-45fc-8e16-950f3835cae5"
+IgaFormation = "3811570c-b24d-4931-9f1c-72ee5a79a1d1"
+KroneckerProducts = "5766f8de-d509-470a-8420-f491b24ab91b"
+NonNegLeastSquares = "b7351bd1-99d9-5c5d-8786-f205a815c4d7"
+SortedSequences = "2f2e3dc8-c2cf-4b7f-b456-36845a1cbdbc"
+StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
+UnivariateSplines = "2552f6ce-f0d6-4ba3-bf39-bb338613ee69"
+Zygote = "e88e6eb3-aa80-5325-afca-941959d7151f"
+
+[extras]
+CartesianProducts = "ddfd9c64-15e7-45fc-8e16-950f3835cae5"
+IgaFormation = "3811570c-b24d-4931-9f1c-72ee5a79a1d1"
+SortedSequences = "2f2e3dc8-c2cf-4b7f-b456-36845a1cbdbc"
+StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+UnivariateSplines = "2552f6ce-f0d6-4ba3-bf39-bb338613ee69"
+
+[targets]
+test = ["Test", "CartesianProducts", "IgaFormation", "SortedSequences", "StaticArrays", "UnivariateSplines"]
